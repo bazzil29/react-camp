@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> TO DO APP </title>
+    <style>
+        .header {
+            background-color: red;
+            text-align: center;
+            padding: 15px;
+        }
+
+        .header h1 {
+            color: #fff;
+            margin-bottom: 10px;
+        }
+
+        .create input {
+            font-size: 16px;
+            padding: 5px 10px;
+        }
+
+        .create button {
+            font-size: 16px;
+            padding: 10px;
+            width: 25%;
+            display: inline-block;
+            cursor: pointer;
+            border: none;
+            background-color: #eee;
+        }
+
+        .create {
+            position: relative;
+        }
+
+        .main ul li {
+            list-style: none;
+            font-size: 16px;
+            background-color: #f9f9f9;
+            padding: 10px 10px 10px 40px;
+        }
+
+        .main ul li .close {
+            position: absolute;
+            top: 0;
+            right: 0;
+            padding: 10px 15px;
+        }
+
+        .main ul li:hover{
+            cursor: pointer;
+            background-color: #eee;
+        }
+        .main ul li.complete {
+            text-decoration: line-through;
+            background-color: #a5a5a5;
+            color: #fff;
+        }
+
+        .main ul li.complete:before {
+            content: '';
+            position: absolute;
+            left: 12px;
+            padding: 10px 15px;
+            background: url('./tick.svg') no-repeat top left;
+        }
+        .main ul li .close {
+            float: right;
+        }
+
+        .main ul li:hover .close{
+            background-color: red;
+            color: #fff;
+        }
+    </style>
+</head>
+
+
+<body>
+<div class="header">
+    <h1> My to do  List </h1>
+    <form class="create">
+        <input type="text" placeholder="Title...">
+        <button>ADD</button>
+    </form>
+</div>
+
+<div class="main">
+    <ul>
+        <li class="complete">Buy eggs <span class="close">x</span></li>
+        <li>Read a book<span class="close">x</span></li>
+        <li>organnize office<span class="close">x</span></li>
+        <li>UET CODE CAMP 2018<span class="close">x</span></li>
+
+    </ul>
+</div>
+
+</body>
+
+
+</htmllang>
