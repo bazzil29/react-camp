@@ -15,26 +15,29 @@
             margin-bottom: 10px;
         }
 
+        .create {
+            position: relative;
+        }
+
         .create input {
             font-size: 16px;
-            padding: 5px 10px;
+            padding: 10px;
+            width: 75%;
+            display: inline-block;
+            border: none;
         }
 
         .create button {
             font-size: 16px;
             padding: 10px;
-            width: 25%;
+            width: 20%;
             display: inline-block;
             cursor: pointer;
             border: none;
             background-color: #eee;
         }
-
-        .create {
-            position: relative;
-        }
-
         .main ul li {
+            position: relative;
             list-style: none;
             font-size: 16px;
             background-color: #f9f9f9;
@@ -63,7 +66,7 @@
             position: absolute;
             left: 12px;
             padding: 10px 15px;
-            background: url('./tick.svg') no-repeat top left;
+            background: url('pick.svg') no-repeat top left;
         }
         .main ul li .close {
             float: right;
@@ -81,8 +84,8 @@
 <div class="header">
     <h1> My to do  List </h1>
     <form class="create">
-        <input type="text" placeholder="Title...">
-        <button>ADD</button>
+        <input id="in" type="text" placeholder="Title...">
+        <button id="buttonAdd">ADD</button>
     </form>
 </div>
 
@@ -96,6 +99,17 @@
     </ul>
 </div>
 
+
+<script >
+    var input = document.getElementById('in');
+    var new_value = input.value;
+    var ul = document.getElementsByTagName('ul');
+    var new_li = document.createElement('li');
+    new_li.innerHTML = new_value +'<span class="close">x</span>';
+    document.getElementById('buttonAdd').addEventListener('click', function(){
+        ul[0].appendChild(new_li);
+    });
+</script>
 </body>
 
 
