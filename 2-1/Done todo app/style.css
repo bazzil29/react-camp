@@ -1,0 +1,107 @@
+.header {
+    background-color: red;
+    text-align: center;
+    padding: 15px;
+}
+
+.header h1 {
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.create {
+    position: relative;
+}
+
+.create input {
+    font-size: 16px;
+    padding: 10px;
+    width: 75%;
+    display: inline-block;
+    border: none;
+}
+
+.create button {
+    font-size: 16px;
+    padding: 10px;
+    width: 20%;
+    display: inline-block;
+    cursor: pointer;
+    border: none;
+    background-color: #eee;
+}
+.main ul li {
+    position: relative;
+    list-style: none;
+    font-size: 16px;
+    background-color: #f9f9f9;
+    padding: 10px 10px 10px 40px;
+}
+
+.main ul li .close {
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 10px 15px 12px 15px;
+    border:none;
+}
+
+.main ul li:hover{
+    background-color: #eee;
+}
+.main ul li.complete {
+    text-decoration: line-through;
+    background-color: #a5a5a5;
+    color: #fff;
+}
+
+/*.main ul li.complete:before {
+    content: '';
+    position: absolute;
+    left: 12px;
+    padding: 10px 15px;
+    background: url('pick.svg') no-repeat top left;
+}*/
+
+/*.main ul li:hover:before{
+    content: '';
+    position: absolute;
+    left: 12px;
+    padding: 10px 15px;
+    background: url('pick.svg') no-repeat top left;
+}*/
+
+.main ul li .done{
+    cursor: pointer;
+    position: absolute;
+    width: 40px;
+    left: 0px;
+    adding: 0px 0px 0px 0px;
+    border: 0px 0px 0px 0px;
+    top: 0px;
+    bottom: 0px;
+    background: url('pick.svg') no-repeat;
+    opacity: 0;
+    transition: all ease 0.01ms;
+}
+
+.main ul li:hover .done{
+    cursor: pointer;
+    position: absolute;
+    width: 40px;
+    left: 0px;
+    adding: 0px 0px 0px 0px;
+    border: 0px 0px 0px 0px;
+    top: 0px;
+    background: url('pick.svg') no-repeat;
+    bottom: 0px;
+    opacity: 1;
+}
+
+.main ul li:hover .close{
+    cursor: pointer;
+    background-color: red;
+    color: #fff;
+    border: none;
+}
