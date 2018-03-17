@@ -2,7 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="57b07e01-0cc9-4742-a094-5962f571d468" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/Done todo app.iml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
       <change beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../../2-2/todoApp localStorage ex - fix error before/.idea/Done todo app.iml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../../2-2/todoApp localStorage ex - fix error before/.idea/modules.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../../2-2/todoApp localStorage ex - fix error before/.idea/vcs.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../../2-2/todoApp localStorage ex - fix error before/.idea/workspace.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../../2-2/todoApp localStorage ex - fix error before/customer.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../../2-2/todoApp localStorage ex - fix error before/index.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../../2-2/todoApp localStorage ex - fix error before/pick.svg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../../2-2/todoApp localStorage ex - fix error before/style.css" />
       <change beforePath="$PROJECT_DIR$/customer.js" afterPath="$PROJECT_DIR$/customer.js" />
       <change beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
       <change beforePath="$PROJECT_DIR$/style.css" afterPath="$PROJECT_DIR$/style.css" />
@@ -69,7 +80,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="673" />
     <option name="width" value="694" />
     <option name="height" value="745" />
@@ -140,16 +151,15 @@
       <updated>1521205132757</updated>
       <workItem from="1521205134117" duration="1855000" />
       <workItem from="1521264179320" duration="4799000" />
-      <workItem from="1521300980444" duration="11450000" />
+      <workItem from="1521300980444" duration="11847000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18104000" />
+    <option name="totallyTimeSpent" value="18501000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1376" height="754" extended-state="7" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1376" height="754" extended-state="6" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
