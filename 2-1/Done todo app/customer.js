@@ -2,7 +2,10 @@ var ul = document.getElementById('list');
 var input = document.getElementById('in');
 
 renderFromLocalStorageToHTML();
-
+/*
+* add todo
+* @param no
+* */
 document.getElementById('buttonAdd').addEventListener('click', function(){
 
     addTodoToLocalStorage(input.value);
@@ -12,12 +15,12 @@ document.getElementById('buttonAdd').addEventListener('click', function(){
 
 
 /*
- *
- * @param x
+ *delete li
+ * @param close button
  */
 function delete_li(x){
 
-    todosOjb = getTodosFromLocalSrorage();
+    todosOjb = getTodosFromLocalStorage();
     var name = x.parentElement.innerText;
     //console.log(x.parentElement.innerText);
 
@@ -33,8 +36,8 @@ function delete_li(x){
 }
 
 /*
- *
- * @param x
+ *save todos to storage
+ * @param todos ojb
  */
 function  saveToLocalStorage(ojb){
 
@@ -46,13 +49,13 @@ function  saveToLocalStorage(ojb){
 
 
 /*
- *
- * @param x
+ *comlete todo
+ * @param click event
  */
 function ok(event){
 
     var name = event.innerText;
-    var todosOjb = getTodosFromLocalSrorage();
+    var todosOjb = getTodosFromLocalStorage();
     //console.log(event.className);
 
     if(event.className === 'complete'){
@@ -64,8 +67,6 @@ function ok(event){
                 todosOjb[i].complete = false;
                 break;
             }
-            else
-                continue;
         }
     }
     else {
@@ -77,8 +78,6 @@ function ok(event){
                 todosOjb[i].complete = true;
                 break;
             }
-            else
-                continue;
         }
     }
 
@@ -90,8 +89,8 @@ function ok(event){
 
 
 /*
- *
- * @param x
+ *add toto to HTML
+ * @param text
  */
 
 function addTodoToLocalStorage(text){
@@ -104,12 +103,12 @@ function addTodoToLocalStorage(text){
 
 
 /*
- *
- * @param x
+ *get todos ojb from storage and add todo
+ * @param text
  */
 function getTodosOjbFromLocalStorageAndAdd(text){
 
-    var todosOjb = getTodosFromLocalSrorage();
+    var todosOjb = getTodosFromLocalStorage();
 
     var isHas;
 
@@ -118,13 +117,10 @@ function getTodosOjbFromLocalStorageAndAdd(text){
             isHas = true;
             break;
         }
-        else{
-            continue;
-        }
     }
 
-    if(isHas){
-        alert("This target has already exist! \n plz type an other target!");
+    if(isHas||text==''){
+        alert("This target has already existed! \n plz,type an other target!");
         return todosOjb;
     }
     else{
@@ -141,10 +137,10 @@ function getTodosOjbFromLocalStorageAndAdd(text){
 
 
 /*
- *
- * @param x
+ *get todos ojb from storage
+ * @param none
  */
-function getTodosFromLocalSrorage() {
+function getTodosFromLocalStorage() {
 
     var str = localStorage.getItem('todos');
 
@@ -160,12 +156,12 @@ function getTodosFromLocalSrorage() {
 
 
 /*
- *
- * @param x
+ *render storage to HTML
+ * @param none
  */
 function renderFromLocalStorageToHTML() {
     ul.innerHTML = '';
-    var todosOjb = getTodosFromLocalSrorage();
+    var todosOjb = getTodosFromLocalStorage();
 
     for(var i = 0 ; i <todosOjb.length ; i++){
 
