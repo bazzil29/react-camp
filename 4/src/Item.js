@@ -16,17 +16,17 @@ class Item extends React.Component{
     delete = () =>{
 
 
-        this.props.deleteTodo(this.props.inputItem._id)
-        // console.log(e.target.parentElement.id);
+        this.props.deleteTodo(this.props.inputItem._id);
+
     }
 
     doneTodo = (e) =>{
-        this.props.doneTodo(e.target.id);
+        this.props.doneTodo(this.props.inputItem._id);
     }
 
     render(){
 
-        return <li className={(this.props.inputItem.completed)?"complete":""} id={this.props.inputItem._id} >
+        return <li className={(this.props.inputItem.completed)?"complete":""} id={this.props.inputItem._id} onClick={this.doneTodo}>
 
             {this.props.inputItem.title}
             <button type={"button"} className={"close"} onClick={this.delete}>X</button>

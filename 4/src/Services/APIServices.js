@@ -60,29 +60,6 @@ export  const  deleteTodo = (id)=>{
 
 export  const doneTodo = (id)=>{
 
-    let datas = null;
-    let isHas = false;
-
-    fetchTodos()
-        .then(object => {
-        if(object.success) datas = object.data;
-    });
-
-
-    if (datas == null) {
-    } else {
-        for (let i = 0; i < datas.length; i++) {
-
-            if (id === datas[i]._id) {
-
-                isHas = true;
-                break;
-
-            }
-        }
-    }
-
-    if (isHas){
 
         const url = `https://uetcc-todo-app.herokuapp.com/draft/${id}/toggle `;
 
@@ -96,7 +73,6 @@ export  const doneTodo = (id)=>{
                 return response.json();
             });
 
-    }
 
 
 };
