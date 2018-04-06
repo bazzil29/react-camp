@@ -73,7 +73,7 @@
   position: absolute;
   left: 12px;
   padding: 10px 15px;
-  background: url('pick.svg') no-repeat top left;
+  background: url('../pick.svg') no-repeat top left;
 }
 
 .list li:hover:before{
@@ -82,7 +82,7 @@
   position: absolute;
   left: 12px;
   padding: 10px 15px;
-  background: url('pick.svg') no-repeat top left;
+  background: url('../pick.svg') no-repeat top left;
 }
 
 
@@ -92,4 +92,39 @@
   background-color: red;
   color: #fff;
   border: none;
+}
+
+.navBar{
+    list-style: none;
+    font-size: 25px;
+    background: #eeeeee;
+    position: relative;
+    padding: 10px 10px 10px 0px;
+    margin: 0px 0px 0px 0px;
+}
+
+#home{
+    background: #eeeeee;
+    text-align: center;
+    text-decoration: none;
+    margin: 0px 0px 0px;
+    padding: 10px 10px 10px 10px;
+}
+
+#login{
+
+    background: #eeeeee;
+    text-align: center;
+    text-decoration: none;
+    margin: 0px 0px 0px;
+    padding: 10px 10px 10px 10px;
+}
+
+#register{
+
+    text-align: center;
+    text-decoration: none;
+    margin: 0px 0px 0px;
+    padding: 10px 10px 10px 10px;
+    background: #eeeeee;
 }
