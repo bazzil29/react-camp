@@ -1,0 +1,143 @@
+.header {
+  background-color: red;
+  text-align: center;
+  padding: 15px;
+}
+
+.header h1 {
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.create {
+  position: relative;
+  font-size: 0;
+}
+
+#input {
+
+  font-size: 16px;
+  padding: 10px;
+  width: 75%;
+  display: inline-block;
+  border: none;
+}
+
+#buttonAdd {
+  font-size: 16px;
+  padding: 10px;
+  width: 20%;
+  display: inline-block;
+  cursor: pointer;
+  border: none;
+  background-color: #eee;
+}
+
+
+.list li {
+  position: relative;
+  list-style: none;
+  font-size: 16px;
+  background-color: #f9f9f9;
+  padding: 10px 10px 10px 40px;
+  margin: 0px 0px 1px 0px;
+}
+.list{
+  padding: 0px 0px 0px 0px;
+
+}
+.list li .close {
+
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 10px 15px 13px 15px;
+  border:none;
+}
+
+.list li:hover{
+
+  background-color: #eee;
+}
+.list li.complete {
+
+  text-decoration: line-through;
+  background-color: #a5a5a5;
+  color: #fff;
+}
+
+.list li.complete:before {
+
+  content: '';
+  position: absolute;
+  left: 12px;
+  padding: 10px 15px;
+  background: url('../Pictures/pick.svg') no-repeat top left;
+}
+
+.list li:hover:before{
+
+  content: '';
+  position: absolute;
+  left: 12px;
+  padding: 10px 15px;
+  background: url('../Pictures/pick.svg') no-repeat top left;
+}
+
+
+.close:hover{
+
+  cursor: pointer;
+  background-color: red;
+  color: #fff;
+  border: none;
+}
+
+.navBar{
+
+
+    list-style: none;
+    font-size: 25px;
+    background: #eeeeee;
+    position: relative;
+    padding: 10px 10px 10px 0px;
+    margin: 0px 0px 0px 0px;
+}
+
+#home{
+    background: #eeeeee;
+    text-align: center;
+    text-decoration: none;
+    margin: 0px 0px 0px;
+    padding: 10px 10px 10px 10px;
+}
+
+#login{
+
+    background: #eeeeee;
+    text-align: center;
+    text-decoration: none;
+    margin: 0px 0px 0px;
+    padding: 10px 10px 10px 10px;
+}
+
+#register{
+
+    text-align: center;
+    text-decoration: none;
+    margin: 0px 0px 0px;
+    padding: 10px 10px 10px 10px;
+    background: #eeeeee;
+}
+
+#logout{
+
+    text-align: center;
+    text-decoration: none;
+    margin: 0px 0px 0px;
+    padding: 10px 10px 10px 10px;
+    background: #eeeeee;
+    border: none;
+}
+
